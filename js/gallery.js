@@ -26,3 +26,10 @@ function unDo() {
     document.querySelector("#image").textContent =
         "Hover over an image below to display here.";
 }
+
+function setTabIndex() {
+    const images = document.querySelectorAll(".preview");
+    for (let i = 0; i < images.length; i++) {
+        images[i].setAttribute("tabindex", "0");
+    }
+}
